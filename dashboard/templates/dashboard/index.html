@@ -1,3 +1,4 @@
+{% load static %} 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -477,10 +478,10 @@
 <body>
     <div class="container">
         <!-- Navbar with Logo Placeholders -->
-        <nav class="navbar">
+       <nav class="navbar">
             <div class="navbar-left">
                 <div class="logo-container">
-                    <img src="sansalogo.jpeg" alt="SANSA Logo" style="height: 50px; width: auto;">
+                    <img src="{% static 'dashboard/sansalogo.jpeg' %}" alt="SANSA Logo" style="height: 50px; width: auto;">
                     <div class="logo-text">
                         <div class="logo-subtitle" style="font-size: 0.75em;">ESG Dashboard</div>
                     </div>
@@ -489,7 +490,7 @@
             
                <div class="navbar-left">
                 <div class="logo-container">
-                    <img src="dstilogo.png" alt="SANSA Logo" style="height: 50px; width: auto;">
+                    <img src="{% static 'dashboard/dstilogo.png' %}"alt="SANSA Logo" style="height: 50px; width: auto;">
                     <div class="logo-text">
                         <div class="logo-subtitle" style="font-size: 0.75em;"></div>
                     </div>
